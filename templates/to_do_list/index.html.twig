@@ -1,0 +1,21 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}{% endblock %}
+{% block body %}
+
+<div class="container">
+    <br>
+    <div class="card card-border p-3">
+        <h4>To do List</h4>
+        <br>
+        <ul>
+            {% for item in list %}
+                <li style="list-style-type: none;">
+                    {{ item.title }}&nbsp&nbsp<input type="checkbox">
+                </li>
+            {% endfor %}
+        </ul>
+    </div>
+</div>
+<script src="js/app.js"></script>
+{% endblock %}
