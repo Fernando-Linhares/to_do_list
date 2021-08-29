@@ -1,0 +1,18 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}{% endblock %}
+{% block body %}
+
+<div class="container">
+    <br>
+    <div class="card card-border p-3">
+        <h4>To do List</h4>
+        <form action="{{path('add')}}" method="post">
+            <div>title<br><input type="text" name="title"></div>
+            <div>content<br><input type="text" name="content"></div><br>
+            <input type="submit">
+        </form>
+    </div>
+</div>
+<script src="js/app.js"></script>
+{% endblock %}
